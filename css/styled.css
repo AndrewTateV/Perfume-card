@@ -1,0 +1,121 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+html{
+font-size: 62.5%;
+}
+
+body{
+font-family: "Fraunces", "Montserrat",serif;
+font-weight: 400;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: hsl(30, 38%, 92%);
+}
+.container{
+width: 600px;
+border-radius: 10px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+align-items: center;
+overflow: hidden;
+
+}
+.img{
+width: 100%;
+height: 400px;
+
+background:  linear-gradient(to bottom right, 
+rgba(0, 0, 0, 0.2), 
+rgba(0, 0, 0, 0)),
+url(../images/image-product-desktop.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.content{
+height: 400px;
+padding: 2rem;  
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+flex-grow: 1;
+gap: 1.8rem;
+background-color: white;
+
+}
+.sub-main{
+  color: hsl(228, 12%, 48%);
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  
+}
+h1{
+  font-family: "Fraunces";
+  font-size: 3rem;
+  width: 80%;
+  line-height: 1.1;
+  display: inline-block;
+}
+
+ .main{
+  color: hsl(228, 12%, 48%);
+  font-size: 1.6rem;
+ } 
+ .price{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+ }
+ .price1{
+  color: hsl(158, 36%, 37%);
+  font-size: 3rem;
+  font-weight: 700;
+ }
+ .price2{
+  color: hsl(228, 12%, 48%);
+  font-size: 1.3rem;
+  /* position: relative; */
+  /* 有一个更好的方法是使用 text-decoration-line: line-through 属性，这是专门用来实现文字删除线效果的CSS属性 */
+  text-decoration-line: line-through;
+ }
+ /* .price2::after{
+  content: '—————';
+  position: absolute;
+  left: 0;
+  transform: translate(-4%, 0);
+ } */
+
+
+ .btn{
+  background-color: hsl(158, 36%, 37%);
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+ }
+.btn:active,.btn:hover{  
+  background-color: hsl(158, 36%, 27%);
+}
+
